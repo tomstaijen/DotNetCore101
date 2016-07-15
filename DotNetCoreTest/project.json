@@ -8,14 +8,20 @@
     "Serilog": "2.0.0"
   },
   "frameworks": {
+    ".NETFramework,Version=4.6": {},
     "netcoreapp1.0": {
       "dependencies": {
         "Microsoft.NETCore.App": {
           "version": "1.0.0",
           "type": "platform"
         }
-      },
-      "imports": "dnxcore50"
+      }
     }
+    //,
+    //"imports": "dnxcore50"
+  },
+  "runtimes": {
+    "win10-x64": {}
   }
+
 }

@@ -5,7 +5,9 @@
     "emitEntryPoint": true
   },
   "dependencies": {
-    "Serilog": "2.0.0"
+    "Newtonsoft.Json": "9.0.1",
+    "Serilog": "2.0.0",
+    "Serilog.Sinks.Literate": "2.1.0-dev-00028"
   },
   "frameworks": {
     ".NETFramework,Version=4.6": {},

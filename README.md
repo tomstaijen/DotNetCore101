@@ -40,7 +40,9 @@ Why would you want this? The goal of VSC is:
 
 Install the C# extensions
 
-`Ctrl+p`
+```c#
+Ctrl+p // to bring up a multi-purpose command box`
+```
 
 `ext install c#`
 
@@ -55,6 +57,8 @@ Now, while opening netcore project folder, it should tell that you are working i
   * Find references/Peek definition (right click)
 
 You can debug by pressing the bug-like tab in the left menubar. Visual Studio Code uses the plugin system to comunicate with a c# language server called OmniSharp. 
+
+[Complete list of keybindings](https://code.visualstudio.com/docs/customization/keybindings)
 
 [More info on C# support for Visual Studio Code](https://code.visualstudio.com/Docs/languages/csharp)
 
@@ -76,6 +80,7 @@ sudo ln -s /opt/dotnet/dotnet /usr/local/bin
 [App Types doc](https://github.com/dotnet/core-docs/blob/master/docs/core/app-types.md)
 
 
+
 # Support for our stack
 
 * WebApi: YES
@@ -90,8 +95,15 @@ sudo ln -s /opt/dotnet/dotnet /usr/local/bin
 
 [The documentation for project.json ](https://github.com/aspnet/Home/wiki/Project.json-file)
 
+[Plans to move (back) to .csproj/MSBuild](https://blogs.msdn.microsoft.com/dotnet/2016/05/23/changes-to-project-json/)
 
+Yes, they're moving back to csproj/msbuild (meh). However, some improvements are due:
+
+* multi-targetting
+* no need to have file lists
 
 # .NET Standard library
 
 What's that noise about .NET Standard? Read it [here](https://github.com/dotnet/core-docs/blob/master/docs/standard/library.md).
+
+You can target a version of the standard library, so that you automatically support different target's that support this standard library version.
